@@ -16,6 +16,7 @@ class HomeView extends GetView<HomeController> {
             child: TabBarView(
               controller: controller.tabController,
               children: [
+                ///first page
                 Container(
                   width: width,
                   height: height,
@@ -50,7 +51,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
 
-                ///second
+                ///second page
                 Container(
                   height: height,
                   width: width,
@@ -113,7 +114,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
 
-                ///Thired
+                ///Thired page
                 Container(
                   height: height,
                   width: width,
@@ -180,7 +181,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
 
-                /// forth
+                /// forth page
                 Container(
                   width: width,
                   height: height,
@@ -272,193 +273,21 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
 
-                ///last
+                ///fifth page
                 Container(
                   height: height,
                   width: width,
                   child: SingleChildScrollView(
                     child: Column(
                       children: [
-                        SizedBox(
-                          width: width,
-                          height: 100.h,
-                          child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            shrinkWrap: true,
-                            itemBuilder: (ctx, index) {
-                              return Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                                child: Container(
-                                  child: Center(child: Text(index.toString())),
-                                  color: Colors.blue,
-                                  width: 50.w,
-                                  height: 100.h,
-                                ),
-                              );
-                            },
-                            itemCount: 10,
-                          ),
-                        ),
-                        SizedBox(
-                          width: width,
-                          height: 300.h,
-                          child: ListView.builder(
-                            physics: NeverScrollableScrollPhysics(),
-                            shrinkWrap: true,
-                            itemBuilder: (ctx, index) {
-                              return Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                                    child: Container(
-                                      child: Center(child: Text(index.toString())),
-                                      color: Colors.green,
-                                      width: 100.w,
-                                      height: 46.h,
-                                    ),
-                                  ),
-                                ],
-                              );
-                            },
-                            itemCount: 6,
-                          ),
-                        ),
-                        SizedBox(
-                          width: width,
-                          height: 100.h,
-                          child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            shrinkWrap: true,
-                            itemBuilder: (ctx, index) {
-                              return Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                                child: Container(
-                                  child: Center(child: Text(index.toString())),
-                                  color: Colors.blue,
-                                  width: 50.w,
-                                  height: 100.h,
-                                ),
-                              );
-                            },
-                            itemCount: 10,
-                          ),
-                        ),
-                        SizedBox(
-                          width: width,
-                          height: 300.h,
-                          child: ListView.builder(
-                            physics: NeverScrollableScrollPhysics(),
-                            shrinkWrap: true,
-                            itemBuilder: (ctx, index) {
-                              return Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                                    child: Container(
-                                      child: Center(child: Text(index.toString())),
-                                      color: Colors.green,
-                                      width: 100.w,
-                                      height: 46.h,
-                                    ),
-                                  ),
-                                ],
-                              );
-                            },
-                            itemCount: 6,
-                          ),
-                        ),
-                        SizedBox(
-                          width: width,
-                          height: 100.h,
-                          child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            shrinkWrap: true,
-                            itemBuilder: (ctx, index) {
-                              return Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                                child: Container(
-                                  child: Center(child: Text(index.toString())),
-                                  color: Colors.blue,
-                                  width: 50.w,
-                                  height: 100.h,
-                                ),
-                              );
-                            },
-                            itemCount: 10,
-                          ),
-                        ),
-                        SizedBox(
-                          width: width,
-                          height: 300.h,
-                          child: ListView.builder(
-                            physics: NeverScrollableScrollPhysics(),
-                            shrinkWrap: true,
-                            itemBuilder: (ctx, index) {
-                              return Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                                    child: Container(
-                                      child: Center(child: Text(index.toString())),
-                                      color: Colors.green,
-                                      width: 100.w,
-                                      height: 46.h,
-                                    ),
-                                  ),
-                                ],
-                              );
-                            },
-                            itemCount: 6,
-                          ),
-                        ),
-                        SizedBox(
-                          width: width,
-                          height: 100.h,
-                          child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            shrinkWrap: true,
-                            itemBuilder: (ctx, index) {
-                              return Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                                child: Container(
-                                  child: Center(child: Text(index.toString())),
-                                  color: Colors.blue,
-                                  width: 50.w,
-                                  height: 100.h,
-                                ),
-                              );
-                            },
-                            itemCount: 10,
-                          ),
-                        ),
-                        SizedBox(
-                          width: width,
-                          height: 300.h,
-                          child: ListView.builder(
-                            physics: NeverScrollableScrollPhysics(),
-                            shrinkWrap: true,
-                            itemBuilder: (ctx, index) {
-                              return Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                                    child: Container(
-                                      child: Center(child: Text(index.toString())),
-                                      color: Colors.green,
-                                      width: 100.w,
-                                      height: 46.h,
-                                    ),
-                                  ),
-                                ],
-                              );
-                            },
-                            itemCount: 6,
-                          ),
-                        )
+                        HorizontalScrollable(),
+                        neverScrollableContainer(),
+                        HorizontalScrollable(),
+                        neverScrollableContainer(),
+                        HorizontalScrollable(),
+                        neverScrollableContainer(),
+                        HorizontalScrollable(),
+                        neverScrollableContainer()
                       ],
                     ),
                   ),
@@ -467,5 +296,56 @@ class HomeView extends GetView<HomeController> {
             ),
           ),
         ));
+  }
+
+  Widget neverScrollableContainer() {
+    return SizedBox(
+      width: width,
+      height: 300.h,
+      child: ListView.builder(
+        physics: NeverScrollableScrollPhysics(),
+        shrinkWrap: true,
+        itemBuilder: (ctx, index) {
+          return Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                child: Container(
+                  child: Center(child: Text(index.toString())),
+                  color: Colors.green,
+                  width: 100.w,
+                  height: 46.h,
+                ),
+              ),
+            ],
+          );
+        },
+        itemCount: 10,
+      ),
+    );
+  }
+
+  Widget HorizontalScrollable() {
+    return SizedBox(
+      width: width,
+      height: 100.h,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        shrinkWrap: true,
+        itemBuilder: (ctx, index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+            child: Container(
+              child: Center(child: Text(index.toString())),
+              color: Colors.blue,
+              width: 50.w,
+              height: 100.h,
+            ),
+          );
+        },
+        itemCount: 10,
+      ),
+    );
   }
 }
