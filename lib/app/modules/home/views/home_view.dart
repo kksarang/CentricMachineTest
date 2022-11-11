@@ -16,7 +16,7 @@ class HomeView extends GetView<HomeController> {
             child: TabBarView(
               controller: controller.tabController,
               children: [
-                ///first page
+                ///first Tab page
                 Container(
                   width: width,
                   height: height,
@@ -51,7 +51,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
 
-                ///second page
+                ///second Tab page
                 Container(
                   height: height,
                   width: width,
@@ -114,7 +114,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
 
-                ///Thired page
+                ///Third Tab page
                 Container(
                   height: height,
                   width: width,
@@ -181,7 +181,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
 
-                /// forth page
+                /// forth Tab page
                 Container(
                   width: width,
                   height: height,
@@ -273,7 +273,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
 
-                ///fifth page
+                ///fifth Tab page
                 Container(
                   height: height,
                   width: width,
