@@ -7,7 +7,6 @@ import '../controllers/home_controller.dart';
 class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
-    print(50.w);
     return Scaffold(
         backgroundColor: Colors.white,
         body: SafeArea(
